@@ -1,0 +1,43 @@
+.parpadeo {
+  animation: parpadeo 0.1s infinite;
+}
+
+@keyframes parpadeo {
+  0% {
+    color: red;
+    opacity: 1;
+  }
+
+  50% {
+    color: yellow;
+    opacity: 0;
+  }
+
+  100% {
+    color: green;
+    opacity: 1;
+  }
+}
+
+.desaparece {
+  animation: desaparece 1s 3s 1 forwards;
+}
+
+@keyframes desaparece {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#first-name {
+  transition: width 0.3s;
+}
+
+#first-name:focus {
+ height: 300px;
+}

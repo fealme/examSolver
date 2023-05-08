@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>¡Te hacemos tu examen!</title>
+    <title>Título de la web</title>
 </head>
 
 <body>
@@ -50,12 +50,12 @@
         <div class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                 <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="img/cerdo.png" class="d-block mx-lg-auto img-fluid" alt="" width="700"
+                    <img src="img/cerdo.png" class="d-block mx-lg-auto img-fluid" alt="Cerdo de ahorros licenciado y capitalista" width="700"
                         height="500" loading="lazy">
                 </div>
                 <div class="col-lg-6">
                     <p class="display-3 fw-bold lh-1 mb-3">¡Te hacemos tu examen!</p>
-                    <p class="lead">Tenemos a los mejores alumnos de cada asignatura disponibles. Precios asequibles y
+                    <p class="lead parpadeo">Tenemos a los mejores alumnos de cada asignatura disponibles. Precios asequibles y
                         negociables con los alumnos estrella. ¡Usa nuestros servicios y no suspendas un examen nunca
                         mas! </p>
                 </div>
@@ -69,7 +69,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="text-center display-4 fw-bold lh-1 mb-5 text-light">Nuestros Servicios</h2>
+                    <h2 class="text-center display-4 fw-bold lh-1 mb-5">Nuestros Servicios</h2>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 my-3">
                     <div class="rounded border shadow p-5">
@@ -116,7 +116,7 @@
                     <h2 class="text-center display-4 fw-bold lh-1 my-5 text-light">Precio</h2>
                 </div>
                 <div class="col">
-                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary desaparece">
                         <div class="card-header text-bg-primary py-3">
                             <h4 class="my-0 fw-normal">Bronze</h4>
                         </div>
@@ -164,6 +164,7 @@
                                 <li>Ideal para subir media</li>
                                 <li>Contacto con el alumno via email</li>
                                 <li>Acceso a nuestro Help Center</li>
+                                <li>Haga clic en el botón de abajo</li>
                             </ul>
                             <button type="button" class="w-100 btn btn-lg btn-outline-primary">Seleccionar</button>
                         </div>
@@ -179,7 +180,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 p-5 my-5">
-                    <h2 class="text-center display-4 fw-bold lh-1 mb-5"">Sobre nosotros</h2>
+                    <!-- <h2 class="text-center display-4 fw-bold lh-1 mb-5"">Sobre nosotros</h2> -->
                     <p class=" text-center lead mt-5">Disponemos de servicios que cualquier estudiante puede solicitar,
                         te aprobamos cualquier examen por un modico precio.</p>
                         <p class="text-center lead">Mas de 100.000 estudiantes disponibles y mas de 1.000.000 de
@@ -228,15 +229,21 @@
                 <div class="offset-md-1 col-md-6 mb-md-0 mb-5">
                     <form id="contact-form" name="contact-form" action="mail.php" method="POST">
                         <div class="row">
-                            <div class="col-md-6 my-3">
+                            <div class="col-md-12 my-3">
                                 <div class="md-form mb-0">
-                                    <!-- <label for="name" class="">Your name</label> -->
-                                    <input type="text" id="name" name="name" class="form-control">
+                                    <label for="first-name" class="">Name</label>
+                                    <input type="text" id="first-name" name="name" class="form-control">
                                 </div>
                             </div>
-                            <div class="col-md-6 my-3">
+                            <div class="col-md-12 my-3">
                                 <div class="md-form mb-0">
-                                    <label for="email" class="">Your email</label>
+                                    <label for="last-name" class="">Name</label>
+                                    <input type="text" id="last-name" name="lastName" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-12 my-3">
+                                <div class="md-form mb-0">
+                                    <!-- <label for="email" class="">Your email</label> -->
                                     <input type="text" id="email" name="email" class="form-control">
                                 </div>
                             </div>
@@ -261,7 +268,7 @@
                         </div>
                     </form>
                     <div class="text-center text-md-left my-5">
-                        <a class="btn btn-primary w-100">Send</a>
+                        <a class="btn btn-primary w-100">boton</a>
                     </div>
                     <div class="status"></div>
                 </div>
